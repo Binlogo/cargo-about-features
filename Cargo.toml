@@ -2,6 +2,11 @@
 name = "cargo-about-features"
 version = "0.1.0"
 edition = "2024"
+description = "A Cargo subcommand to list enabled features for dependencies."
+license = "MIT"
+repository = "https://github.com/Binlogo/cargo-about-features"
+keywords = ["cargo", "subcommand", "features", "dependencies", "lockfile"]
+categories = ["development-tools::cargo-plugins"]
 
 [dependencies]
 clap = { version = "4.5", features = ["derive", "cargo"] }

@@ -12,13 +12,17 @@ enum CargoCli {
 struct Args {
     #[arg(long)]
     manifest_path: Option<std::path::PathBuf>,
+
+    /// Output file path
+    #[arg(short, long, default_value = "Cargo.features")]
+    output: std::path::PathBuf,
 }
 
 fn main() -> Result<()> {
     let CargoCli::AboutFeatures(args) = CargoCli::parse();
 
     let mut cmd = cargo_metadata::MetadataCommand::new();
-    if let Some(path) = args.manifest_path {
+    if let Some(path) = &args.manifest_path {
         cmd.manifest_path(path);
     }
 
@@ -49,7 +53,7 @@ fn main() -> Result<()> {
     }
 
     let toml_string = toml::to_string_pretty(&features_map)?;
-    std::fs::write("Cargo.features", toml_string)?;
+    std::fs::write(&args.output, toml_string)?;
 
     Ok(())
 }
