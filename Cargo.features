@@ -1,0 +1,135 @@
+anstream = [
+    "auto",
+    "default",
+    "wincon",
+]
+anstyle = [
+    "default",
+    "std",
+]
+anstyle-parse = [
+    "default",
+    "utf8",
+]
+anstyle-query = []
+anstyle-wincon = []
+anyhow = [
+    "default",
+    "std",
+]
+camino = ["serde1"]
+cargo-about-features = []
+cargo-platform = []
+cargo_metadata = ["default"]
+clap = [
+    "cargo",
+    "color",
+    "default",
+    "derive",
+    "error-context",
+    "help",
+    "std",
+    "suggestions",
+    "usage",
+]
+clap_builder = [
+    "cargo",
+    "color",
+    "error-context",
+    "help",
+    "std",
+    "suggestions",
+    "usage",
+]
+clap_derive = ["default"]
+clap_lex = []
+colorchoice = []
+equivalent = []
+hashbrown = []
+heck = []
+indexmap = [
+    "default",
+    "std",
+]
+is_terminal_polyfill = ["default"]
+itoa = []
+memchr = [
+    "alloc",
+    "std",
+]
+once_cell_polyfill = ["default"]
+proc-macro2 = [
+    "default",
+    "proc-macro",
+]
+quote = [
+    "default",
+    "proc-macro",
+]
+ryu = []
+semver = [
+    "default",
+    "serde",
+    "std",
+]
+serde = [
+    "default",
+    "derive",
+    "serde_derive",
+    "std",
+]
+serde_core = [
+    "default",
+    "result",
+    "std",
+]
+serde_derive = ["default"]
+serde_json = [
+    "default",
+    "std",
+    "unbounded_depth",
+]
+serde_spanned = ["serde"]
+strsim = []
+syn = [
+    "clone-impls",
+    "default",
+    "derive",
+    "full",
+    "parsing",
+    "printing",
+    "proc-macro",
+]
+thiserror = []
+thiserror-impl = []
+toml = [
+    "default",
+    "display",
+    "parse",
+]
+toml_datetime = ["serde"]
+toml_edit = [
+    "display",
+    "parse",
+    "serde",
+]
+toml_write = [
+    "alloc",
+    "default",
+    "std",
+]
+unicode-ident = []
+utf8parse = ["default"]
+windows-link = []
+windows-sys = [
+    "Win32",
+    "Win32_Foundation",
+    "Win32_System",
+    "Win32_System_Console",
+    "default",
+]
+winnow = [
+    "alloc",
+    "default",
+    "std",
+]
