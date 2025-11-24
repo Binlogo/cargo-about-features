@@ -1,0 +1,3118 @@
+[aho-corasick]
+enabled = [
+    "perf-literal",
+    "std",
+]
+unused = [
+    "default",
+    "logging",
+]
+dangling = []
+
+[alloy-eip2930]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "default",
+    "serde",
+]
+dangling = []
+
+[alloy-eip7702]
+enabled = [
+    "k256",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "default",
+    "serde",
+    "serde-bincode-compat",
+    "serde_with",
+]
+dangling = []
+
+[alloy-json-abi]
+enabled = ["std"]
+unused = [
+    "default",
+    "serde_json",
+]
+dangling = []
+
+[alloy-primitives]
+enabled = [
+    "k256",
+    "map",
+    "rlp",
+    "serde",
+    "std",
+]
+unused = [
+    "allocative",
+    "arbitrary",
+    "asm-keccak",
+    "default",
+    "getrandom",
+    "hex-compat",
+    "map-foldhash",
+    "map-fxhash",
+    "map-hashbrown",
+    "map-indexmap",
+    "native-keccak",
+    "nightly",
+    "postgres",
+    "rand",
+    "rayon",
+    "sha3-keccak",
+    "tiny-keccak",
+]
+dangling = []
+
+[alloy-rlp]
+enabled = [
+    "derive",
+    "std",
+]
+unused = [
+    "arrayvec",
+    "core-error",
+    "core-net",
+    "default",
+]
+dangling = []
+
+[alloy-rlp-derive]
+enabled = []
+unused = []
+dangling = []
+
+[alloy-sol-macro]
+enabled = []
+unused = ["json"]
+dangling = []
+
+[alloy-sol-macro-expander]
+enabled = []
+unused = ["json"]
+dangling = []
+
+[alloy-sol-macro-input]
+enabled = []
+unused = ["json"]
+dangling = []
+
+[alloy-sol-type-parser]
+enabled = [
+    "serde",
+    "std",
+]
+unused = [
+    "debug",
+    "default",
+]
+dangling = []
+
+[alloy-sol-types]
+enabled = [
+    "default",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "eip712-serde",
+    "json",
+]
+dangling = []
+
+[ansi_term]
+enabled = []
+unused = [
+    "derive_serde_style",
+    "serde",
+]
+dangling = []
+
+[anyhow]
+enabled = [
+    "default",
+    "std",
+]
+unused = ["backtrace"]
+dangling = []
+
+[ark-ff]
+enabled = ["std"]
+unused = [
+    "asm",
+    "default",
+    "parallel",
+    "rayon",
+]
+dangling = []
+
+[ark-ff-asm]
+enabled = []
+unused = []
+dangling = []
+
+["ark-ff-asm@0.4.2"]
+enabled = []
+unused = []
+dangling = []
+
+[ark-ff-macros]
+enabled = []
+unused = []
+dangling = []
+
+["ark-ff-macros@0.4.2"]
+enabled = []
+unused = []
+dangling = []
+
+["ark-ff@0.4.2"]
+enabled = ["std"]
+unused = [
+    "asm",
+    "default",
+    "parallel",
+    "rayon",
+]
+dangling = []
+
+[ark-serialize]
+enabled = ["std"]
+unused = [
+    "ark-serialize-derive",
+    "default",
+    "derive",
+]
+dangling = []
+
+["ark-serialize@0.4.2"]
+enabled = ["std"]
+unused = [
+    "ark-serialize-derive",
+    "default",
+    "derive",
+]
+dangling = []
+
+[ark-std]
+enabled = ["std"]
+unused = [
+    "colored",
+    "default",
+    "parallel",
+    "print-trace",
+    "rayon",
+]
+dangling = []
+
+["ark-std@0.4.0"]
+enabled = ["std"]
+unused = [
+    "colored",
+    "default",
+    "getrandom",
+    "parallel",
+    "print-trace",
+    "rayon",
+]
+dangling = []
+
+[arrayvec]
+enabled = ["std"]
+unused = [
+    "borsh",
+    "default",
+    "serde",
+    "zeroize",
+]
+dangling = []
+
+[atty]
+enabled = []
+unused = []
+dangling = []
+
+[aurora-engine-modexp]
+enabled = []
+unused = [
+    "bench",
+    "default",
+    "ibig",
+    "std",
+]
+dangling = []
+
+[auto_impl]
+enabled = []
+unused = []
+dangling = []
+
+[autocfg]
+enabled = []
+unused = []
+dangling = []
+
+[base16ct]
+enabled = ["alloc"]
+unused = ["std"]
+dangling = []
+
+[base64ct]
+enabled = ["alloc"]
+unused = ["std"]
+dangling = []
+
+[bcs]
+enabled = []
+unused = []
+dangling = []
+
+[bincode]
+enabled = []
+unused = ["i128"]
+dangling = []
+
+[bit-set]
+enabled = [
+    "default",
+    "std",
+]
+unused = []
+dangling = []
+
+[bit-vec]
+enabled = [
+    "default",
+    "std",
+]
+unused = [
+    "serde",
+    "serde_no_std",
+    "serde_std",
+]
+dangling = []
+
+[bitflags]
+enabled = ["default"]
+unused = [
+    "compiler_builtins",
+    "core",
+    "example_generated",
+    "rustc-dep-of-std",
+]
+dangling = []
+
+["bitflags@2.6.0"]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "bytemuck",
+    "compiler_builtins",
+    "core",
+    "example_generated",
+    "rustc-dep-of-std",
+    "serde",
+]
+dangling = []
+
+[bitvec]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "atomic",
+    "default",
+    "serde",
+    "testing",
+]
+dangling = []
+
+[block-buffer]
+enabled = []
+unused = []
+dangling = []
+
+[blst]
+enabled = [
+    "default",
+    "portable",
+]
+unused = [
+    "force-adx",
+    "no-threads",
+    "serde",
+    "serde-secret",
+]
+dangling = []
+
+[byte-slice-cast]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[byteorder]
+enabled = [
+    "i128",
+    "std",
+]
+unused = ["default"]
+dangling = []
+
+[bytes]
+enabled = [
+    "default",
+    "serde",
+    "std",
+]
+unused = []
+dangling = []
+
+[c-kzg]
+enabled = [
+    "ethereum_kzg_settings",
+    "portable",
+    "std",
+]
+unused = [
+    "default",
+    "generate-bindings",
+    "no-threads",
+    "serde",
+]
+dangling = []
+
+[cc]
+enabled = []
+unused = [
+    "jobserver",
+    "parallel",
+]
+dangling = []
+
+[cfg-if]
+enabled = []
+unused = [
+    "compiler_builtins",
+    "core",
+    "rustc-dep-of-std",
+]
+dangling = []
+
+[clap]
+enabled = [
+    "ansi_term",
+    "atty",
+    "color",
+    "default",
+    "strsim",
+    "suggestions",
+    "vec_map",
+]
+unused = [
+    "clippy",
+    "debug",
+    "doc",
+    "nightly",
+    "no_cargo",
+    "term_size",
+    "unstable",
+    "wrap_help",
+    "yaml",
+    "yaml-rust",
+]
+dangling = []
+
+[const-hex]
+enabled = [
+    "alloc",
+    "core-error",
+    "serde",
+    "std",
+]
+unused = [
+    "__fuzzing",
+    "default",
+    "force-generic",
+    "hex",
+    "nightly",
+    "portable-simd",
+]
+dangling = []
+
+[const-oid]
+enabled = []
+unused = [
+    "arbitrary",
+    "db",
+    "std",
+]
+dangling = []
+
+[cpufeatures]
+enabled = []
+unused = []
+dangling = []
+
+[crunchy]
+enabled = [
+    "default",
+    "limit_128",
+    "std",
+]
+unused = [
+    "limit_1024",
+    "limit_2048",
+    "limit_256",
+    "limit_512",
+    "limit_64",
+]
+dangling = []
+
+[crypto-bigint]
+enabled = [
+    "generic-array",
+    "rand_core",
+    "zeroize",
+]
+unused = [
+    "alloc",
+    "default",
+    "der",
+    "extra-sizes",
+    "rand",
+    "rlp",
+    "serde",
+]
+dangling = []
+
+[crypto-common]
+enabled = ["std"]
+unused = [
+    "getrandom",
+    "rand_core",
+]
+dangling = []
+
+[der]
+enabled = [
+    "alloc",
+    "oid",
+    "std",
+    "zeroize",
+]
+unused = [
+    "arbitrary",
+    "bytes",
+    "derive",
+    "flagset",
+    "pem",
+    "real",
+    "time",
+]
+dangling = []
+
+[derivative]
+enabled = ["use_core"]
+unused = []
+dangling = []
+
+[derive_more]
+enabled = [
+    "add",
+    "add_assign",
+    "as_ref",
+    "deref",
+    "deref_mut",
+    "display",
+    "from",
+    "from_str",
+    "index",
+    "index_mut",
+    "into",
+    "into_iterator",
+    "not",
+    "std",
+]
+unused = [
+    "constructor",
+    "debug",
+    "default",
+    "error",
+    "full",
+    "is_variant",
+    "mul",
+    "mul_assign",
+    "sum",
+    "testing-helpers",
+    "try_from",
+    "try_into",
+    "try_unwrap",
+    "unwrap",
+]
+dangling = []
+
+[derive_more-impl]
+enabled = [
+    "add",
+    "add_assign",
+    "as_ref",
+    "default",
+    "deref",
+    "deref_mut",
+    "display",
+    "from",
+    "from_str",
+    "index",
+    "index_mut",
+    "into",
+    "into_iterator",
+    "not",
+]
+unused = [
+    "constructor",
+    "debug",
+    "error",
+    "full",
+    "is_variant",
+    "mul",
+    "mul_assign",
+    "sum",
+    "testing-helpers",
+    "try_from",
+    "try_into",
+    "try_unwrap",
+    "unwrap",
+]
+dangling = []
+
+[digest]
+enabled = []
+unused = [
+    "alloc",
+    "blobby",
+    "dev",
+    "std",
+]
+dangling = []
+
+["digest@0.10.7"]
+enabled = [
+    "alloc",
+    "block-buffer",
+    "const-oid",
+    "core-api",
+    "default",
+    "mac",
+    "oid",
+    "std",
+    "subtle",
+]
+unused = [
+    "blobby",
+    "dev",
+    "rand_core",
+]
+dangling = []
+
+[dunce]
+enabled = []
+unused = []
+dangling = []
+
+[dyn-clone]
+enabled = []
+unused = []
+dangling = []
+
+[ecdsa]
+enabled = [
+    "alloc",
+    "arithmetic",
+    "der",
+    "digest",
+    "hazmat",
+    "rfc6979",
+    "signing",
+    "spki",
+    "std",
+    "verifying",
+]
+unused = [
+    "default",
+    "dev",
+    "pem",
+    "pkcs8",
+    "serde",
+    "serdect",
+    "sha2",
+]
+dangling = []
+
+[either]
+enabled = [
+    "default",
+    "use_std",
+]
+unused = ["serde"]
+dangling = []
+
+[elliptic-curve]
+enabled = [
+    "alloc",
+    "arithmetic",
+    "digest",
+    "ff",
+    "group",
+    "hazmat",
+    "sec1",
+    "std",
+]
+unused = [
+    "bits",
+    "default",
+    "dev",
+    "ecdh",
+    "hash2curve",
+    "jwk",
+    "pem",
+    "pkcs8",
+    "serde",
+    "voprf",
+]
+dangling = []
+
+[enumn]
+enabled = []
+unused = []
+dangling = []
+
+[equivalent]
+enabled = []
+unused = []
+dangling = []
+
+[erased-discriminant]
+enabled = []
+unused = []
+dangling = []
+
+[errno]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[fastrand]
+enabled = [
+    "alloc",
+    "default",
+    "std",
+]
+unused = [
+    "getrandom",
+    "js",
+]
+dangling = []
+
+[fastrlp]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "derive",
+    "ethbloom",
+    "ethereum-types",
+    "ethnum",
+    "fastrlp-derive",
+]
+dangling = []
+
+["fastrlp@0.4.0"]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "derive",
+    "ethbloom",
+    "ethereum-types",
+    "ethnum",
+    "fastrlp-derive",
+]
+dangling = []
+
+[ff]
+enabled = ["alloc"]
+unused = [
+    "bits",
+    "bitvec",
+    "byteorder",
+    "default",
+    "derive",
+    "derive_bits",
+    "ff_derive",
+    "std",
+]
+dangling = []
+
+[fixed-hash]
+enabled = [
+    "byteorder",
+    "rand",
+    "rustc-hex",
+    "std",
+]
+unused = [
+    "api-dummy",
+    "arbitrary",
+    "default",
+    "quickcheck",
+]
+dangling = []
+
+[fnv]
+enabled = [
+    "default",
+    "std",
+]
+unused = []
+dangling = []
+
+[foldhash]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[funty]
+enabled = []
+unused = [
+    "default",
+    "std",
+]
+dangling = []
+
+[generic-array]
+enabled = [
+    "more_lengths",
+    "zeroize",
+]
+unused = ["serde"]
+dangling = []
+
+[getrandom]
+enabled = ["std"]
+unused = [
+    "compiler_builtins",
+    "core",
+    "custom",
+    "js",
+    "js-sys",
+    "linux_disable_fallback",
+    "rdrand",
+    "rustc-dep-of-std",
+    "test-in-browser",
+    "wasm-bindgen",
+]
+dangling = []
+
+[glob]
+enabled = []
+unused = []
+dangling = []
+
+[group]
+enabled = ["alloc"]
+unused = [
+    "default",
+    "memuse",
+    "rand",
+    "rand_xorshift",
+    "tests",
+    "wnaf-memuse",
+]
+dangling = []
+
+[hashbrown]
+enabled = ["raw"]
+unused = [
+    "ahash",
+    "ahash-compile-time-rng",
+    "alloc",
+    "bumpalo",
+    "compiler_builtins",
+    "core",
+    "default",
+    "inline-more",
+    "nightly",
+    "rayon",
+    "rustc-dep-of-std",
+    "rustc-internal-api",
+    "serde",
+]
+dangling = []
+
+["hashbrown@0.15.2"]
+enabled = [
+    "default-hasher",
+    "inline-more",
+    "serde",
+]
+unused = [
+    "alloc",
+    "allocator-api2",
+    "compiler_builtins",
+    "core",
+    "default",
+    "equivalent",
+    "nightly",
+    "raw-entry",
+    "rayon",
+    "rustc-dep-of-std",
+    "rustc-internal-api",
+]
+dangling = []
+
+[heck]
+enabled = []
+unused = []
+dangling = []
+
+["heck@0.5.0"]
+enabled = []
+unused = []
+dangling = []
+
+[hermit-abi]
+enabled = ["default"]
+unused = [
+    "compiler_builtins",
+    "core",
+    "docs",
+    "rustc-dep-of-std",
+]
+dangling = []
+
+["hermit-abi@0.3.9"]
+enabled = ["default"]
+unused = [
+    "alloc",
+    "compiler_builtins",
+    "core",
+    "rustc-dep-of-std",
+]
+dangling = []
+
+[hex]
+enabled = [
+    "alloc",
+    "default",
+    "serde",
+    "std",
+]
+unused = []
+dangling = []
+
+[hmac]
+enabled = ["reset"]
+unused = ["std"]
+dangling = []
+
+[home]
+enabled = []
+unused = []
+dangling = []
+
+[impl-codec]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[impl-trait-for-tuples]
+enabled = []
+unused = []
+dangling = []
+
+[include_dir]
+enabled = [
+    "default",
+    "glob",
+    "search",
+]
+unused = ["example-output"]
+dangling = []
+
+[include_dir_impl]
+enabled = []
+unused = []
+dangling = []
+
+[indexmap]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "quickcheck",
+    "rayon",
+    "rustc-rayon",
+    "serde",
+    "serde-1",
+    "test_debug",
+    "test_low_transition_point",
+]
+dangling = []
+
+["indexmap@2.7.0"]
+enabled = [
+    "default",
+    "serde",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "borsh",
+    "quickcheck",
+    "rayon",
+    "rustc-rayon",
+    "test_debug",
+]
+dangling = []
+
+[itertools]
+enabled = [
+    "use_alloc",
+    "use_std",
+]
+unused = ["default"]
+dangling = []
+
+[itoa]
+enabled = []
+unused = ["no-panic"]
+dangling = []
+
+[k256]
+enabled = [
+    "alloc",
+    "arithmetic",
+    "digest",
+    "ecdsa",
+    "ecdsa-core",
+    "sha2",
+    "sha256",
+    "std",
+]
+unused = [
+    "bits",
+    "critical-section",
+    "default",
+    "ecdh",
+    "expose-field",
+    "hash2curve",
+    "hex-literal",
+    "jwk",
+    "once_cell",
+    "pem",
+    "pkcs8",
+    "precomputed-tables",
+    "schnorr",
+    "serde",
+    "serdect",
+    "signature",
+    "test-vectors",
+]
+dangling = []
+
+[keccak]
+enabled = []
+unused = [
+    "asm",
+    "no_unroll",
+    "simd",
+]
+dangling = []
+
+[keccak-asm]
+enabled = ["std"]
+unused = [
+    "default",
+    "oid",
+    "zeroize",
+]
+dangling = []
+
+[lazy_static]
+enabled = [
+    "spin",
+    "spin_no_std",
+]
+unused = []
+dangling = []
+
+[libc]
+enabled = [
+    "default",
+    "extra_traits",
+    "std",
+]
+unused = [
+    "align",
+    "const-extern-fn",
+    "rustc-dep-of-std",
+    "rustc-std-workspace-core",
+    "use_std",
+]
+dangling = []
+
+[libm]
+enabled = ["default"]
+unused = [
+    "force-soft-floats",
+    "unstable",
+]
+dangling = []
+
+[linked-hash-map]
+enabled = []
+unused = [
+    "heapsize",
+    "heapsize_impl",
+    "nightly",
+    "serde",
+    "serde_impl",
+]
+dangling = []
+
+[linux-raw-sys]
+enabled = [
+    "elf",
+    "errno",
+    "general",
+    "ioctl",
+    "no_std",
+]
+unused = [
+    "bootparam",
+    "compiler_builtins",
+    "core",
+    "default",
+    "if_arp",
+    "if_ether",
+    "if_packet",
+    "io_uring",
+    "loop_device",
+    "mempolicy",
+    "net",
+    "netlink",
+    "prctl",
+    "rustc-dep-of-std",
+    "std",
+    "system",
+    "xdp",
+]
+dangling = []
+
+[maplit]
+enabled = []
+unused = []
+dangling = []
+
+[memchr]
+enabled = [
+    "alloc",
+    "default",
+    "std",
+]
+unused = [
+    "compiler_builtins",
+    "core",
+    "libc",
+    "logging",
+    "rustc-dep-of-std",
+    "use_std",
+]
+dangling = []
+
+[num]
+enabled = ["alloc"]
+unused = [
+    "default",
+    "libm",
+    "num-bigint",
+    "rand",
+    "serde",
+    "std",
+]
+dangling = []
+
+[num-bigint]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "default",
+    "quickcheck",
+    "rand",
+    "serde",
+]
+dangling = []
+
+[num-complex]
+enabled = []
+unused = [
+    "bytecheck",
+    "bytemuck",
+    "default",
+    "libm",
+    "rand",
+    "rkyv",
+    "serde",
+    "std",
+]
+dangling = []
+
+[num-integer]
+enabled = [
+    "i128",
+    "std",
+]
+unused = ["default"]
+dangling = []
+
+[num-iter]
+enabled = ["i128"]
+unused = [
+    "default",
+    "std",
+]
+dangling = []
+
+[num-rational]
+enabled = ["num-bigint"]
+unused = [
+    "default",
+    "num-bigint-std",
+    "serde",
+    "std",
+]
+dangling = []
+
+[num-traits]
+enabled = [
+    "i128",
+    "libm",
+    "std",
+]
+unused = ["default"]
+dangling = []
+
+[num_cpus]
+enabled = []
+unused = []
+dangling = []
+
+[once_cell]
+enabled = [
+    "alloc",
+    "default",
+    "race",
+    "std",
+]
+unused = [
+    "atomic-polyfill",
+    "critical-section",
+    "parking_lot",
+    "portable-atomic",
+    "unstable",
+]
+dangling = []
+
+[parity-scale-codec]
+enabled = [
+    "chain-error",
+    "derive",
+    "max-encoded-len",
+    "parity-scale-codec-derive",
+    "serde",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "bit-vec",
+    "bitvec",
+    "bytes",
+    "default",
+    "full",
+    "fuzz",
+    "generic-array",
+]
+dangling = []
+
+[parity-scale-codec-derive]
+enabled = ["max-encoded-len"]
+unused = []
+dangling = []
+
+[paste]
+enabled = []
+unused = []
+dangling = []
+
+[pest]
+enabled = [
+    "default",
+    "memchr",
+    "std",
+]
+unused = [
+    "const_prec_climber",
+    "miette-error",
+    "pretty-print",
+]
+dangling = []
+
+[phf]
+enabled = [
+    "default",
+    "macros",
+    "phf_macros",
+    "proc-macro-hack",
+    "std",
+]
+unused = [
+    "serde",
+    "uncased",
+    "unicase",
+]
+dangling = []
+
+[phf_generator]
+enabled = []
+unused = ["criterion"]
+dangling = []
+
+[phf_macros]
+enabled = []
+unused = [
+    "unicase",
+    "unicase_",
+]
+dangling = []
+
+[phf_shared]
+enabled = ["std"]
+unused = [
+    "default",
+    "uncased",
+    "unicase",
+]
+dangling = []
+
+[pkcs8]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "3des",
+    "des-insecure",
+    "encryption",
+    "getrandom",
+    "pem",
+    "pkcs5",
+    "rand_core",
+    "sha1-insecure",
+    "subtle",
+]
+dangling = []
+
+[ppv-lite86]
+enabled = [
+    "simd",
+    "std",
+]
+unused = [
+    "default",
+    "no_simd",
+]
+dangling = []
+
+[primitive-types]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "byteorder",
+    "codec",
+    "default",
+    "fp-conversion",
+    "impl-codec",
+    "impl-num-traits",
+    "impl-rlp",
+    "impl-serde",
+    "json-schema",
+    "num-traits",
+    "rlp",
+    "rustc-hex",
+    "scale-info",
+    "scale-info-crate",
+    "serde",
+    "serde_no_std",
+]
+dangling = []
+
+[proc-macro-crate]
+enabled = []
+unused = []
+dangling = []
+
+[proc-macro-error]
+enabled = [
+    "default",
+    "syn",
+    "syn-error",
+]
+unused = []
+dangling = []
+
+[proc-macro-error-attr]
+enabled = []
+unused = []
+dangling = []
+
+[proc-macro-error-attr2]
+enabled = []
+unused = []
+dangling = []
+
+[proc-macro-error2]
+enabled = [
+    "default",
+    "syn-error",
+]
+unused = ["nightly"]
+dangling = []
+
+[proc-macro-hack]
+enabled = []
+unused = []
+dangling = []
+
+[proc-macro2]
+enabled = [
+    "default",
+    "proc-macro",
+]
+unused = [
+    "nightly",
+    "span-locations",
+]
+dangling = []
+
+[proptest]
+enabled = [
+    "alloc",
+    "bit-set",
+    "default",
+    "fork",
+    "lazy_static",
+    "regex-syntax",
+    "rusty-fork",
+    "std",
+    "tempfile",
+    "timeout",
+]
+unused = [
+    "atomic64bit",
+    "attr-macro",
+    "default-code-coverage",
+    "hardware-rng",
+    "proptest-macro",
+    "unstable",
+    "x86",
+]
+dangling = []
+
+[quick-error]
+enabled = []
+unused = []
+dangling = []
+
+[quote]
+enabled = [
+    "default",
+    "proc-macro",
+]
+unused = []
+dangling = []
+
+[radium]
+enabled = []
+unused = []
+dangling = []
+
+[rand]
+enabled = [
+    "alloc",
+    "default",
+    "getrandom",
+    "libc",
+    "rand_chacha",
+    "serde",
+    "small_rng",
+    "std",
+    "std_rng",
+]
+unused = [
+    "log",
+    "min_const_gen",
+    "nightly",
+    "packed_simd",
+    "serde1",
+    "simd_support",
+]
+dangling = []
+
+[rand_chacha]
+enabled = ["std"]
+unused = [
+    "default",
+    "serde",
+    "serde1",
+    "simd",
+]
+dangling = []
+
+[rand_core]
+enabled = [
+    "alloc",
+    "getrandom",
+    "std",
+]
+unused = [
+    "serde",
+    "serde1",
+]
+dangling = []
+
+[rand_xorshift]
+enabled = []
+unused = [
+    "serde",
+    "serde1",
+]
+dangling = []
+
+[regex]
+enabled = [
+    "default",
+    "perf",
+    "perf-backtrack",
+    "perf-cache",
+    "perf-dfa",
+    "perf-inline",
+    "perf-literal",
+    "perf-onepass",
+    "std",
+    "unicode",
+    "unicode-age",
+    "unicode-bool",
+    "unicode-case",
+    "unicode-gencat",
+    "unicode-perl",
+    "unicode-script",
+    "unicode-segment",
+]
+unused = [
+    "logging",
+    "pattern",
+    "perf-dfa-full",
+    "unstable",
+    "use_std",
+]
+dangling = []
+
+[regex-automata]
+enabled = [
+    "alloc",
+    "dfa-onepass",
+    "hybrid",
+    "meta",
+    "nfa-backtrack",
+    "nfa-pikevm",
+    "nfa-thompson",
+    "perf-inline",
+    "perf-literal",
+    "perf-literal-multisubstring",
+    "perf-literal-substring",
+    "std",
+    "syntax",
+    "unicode",
+    "unicode-age",
+    "unicode-bool",
+    "unicode-case",
+    "unicode-gencat",
+    "unicode-perl",
+    "unicode-script",
+    "unicode-segment",
+    "unicode-word-boundary",
+]
+unused = [
+    "default",
+    "dfa",
+    "dfa-build",
+    "dfa-search",
+    "internal-instrument",
+    "internal-instrument-pikevm",
+    "logging",
+    "nfa",
+    "perf",
+]
+dangling = []
+
+[regex-syntax]
+enabled = [
+    "default",
+    "std",
+    "unicode",
+    "unicode-age",
+    "unicode-bool",
+    "unicode-case",
+    "unicode-gencat",
+    "unicode-perl",
+    "unicode-script",
+    "unicode-segment",
+]
+unused = ["arbitrary"]
+dangling = []
+
+[revm]
+enabled = [
+    "blst",
+    "c-kzg",
+    "default",
+    "portable",
+    "secp256k1",
+    "std",
+]
+unused = [
+    "alloydb",
+    "arbitrary",
+    "asm-keccak",
+    "dev",
+    "ethersdb",
+    "hashbrown",
+    "kzg-rs",
+    "memory_limit",
+    "negate-optimism-default-handler",
+    "optimism",
+    "optimism-default-handler",
+    "optional_balance_check",
+    "optional_beneficiary_reward",
+    "optional_block_gas_limit",
+    "optional_eip3607",
+    "optional_gas_refund",
+    "optional_no_base_fee",
+    "serde",
+    "serde-json",
+    "test-utils",
+]
+dangling = []
+
+[revm-interpreter]
+enabled = [
+    "portable",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "asm-keccak",
+    "default",
+    "dev",
+    "hashbrown",
+    "kzg-rs",
+    "memory_limit",
+    "negate-optimism-default-handler",
+    "optimism",
+    "optimism-default-handler",
+    "optional_balance_check",
+    "optional_beneficiary_reward",
+    "optional_block_gas_limit",
+    "optional_eip3607",
+    "optional_gas_refund",
+    "optional_no_base_fee",
+    "parse",
+    "serde",
+]
+dangling = []
+
+[revm-precompile]
+enabled = [
+    "blst",
+    "c-kzg",
+    "portable",
+    "secp256k1",
+    "std",
+]
+unused = [
+    "asm-keccak",
+    "default",
+    "hashbrown",
+    "kzg-rs",
+    "negate-optimism-default-handler",
+    "optimism",
+    "optimism-default-handler",
+    "secp256r1",
+]
+dangling = []
+
+[revm-primitives]
+enabled = [
+    "c-kzg",
+    "portable",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "asm-keccak",
+    "default",
+    "dev",
+    "hashbrown",
+    "kzg-rs",
+    "memory_limit",
+    "negate-optimism-default-handler",
+    "optimism",
+    "optimism-default-handler",
+    "optional_balance_check",
+    "optional_beneficiary_reward",
+    "optional_block_gas_limit",
+    "optional_eip3607",
+    "optional_gas_refund",
+    "optional_no_base_fee",
+    "rand",
+    "serde",
+]
+dangling = []
+
+[rfc6979]
+enabled = []
+unused = []
+dangling = []
+
+[ripemd]
+enabled = ["std"]
+unused = [
+    "default",
+    "oid",
+]
+dangling = []
+
+[rlp]
+enabled = ["std"]
+unused = [
+    "default",
+    "derive",
+    "rlp-derive",
+]
+dangling = []
+
+[ruint]
+enabled = [
+    "alloc",
+    "alloy-rlp",
+    "serde",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "ark-ff",
+    "ark-ff-04",
+    "bn-rs",
+    "bytemuck",
+    "default",
+    "der",
+    "diesel",
+    "fastrlp",
+    "fastrlp-04",
+    "generic_const_exprs",
+    "nightly",
+    "num-bigint",
+    "num-integer",
+    "num-traits",
+    "parity-scale-codec",
+    "postgres",
+    "primitive-types",
+    "proptest",
+    "pyo3",
+    "quickcheck",
+    "rand",
+    "rlp",
+    "sqlx",
+    "ssz",
+    "subtle",
+    "valuable",
+    "zeroize",
+]
+dangling = []
+
+[ruint-macro]
+enabled = []
+unused = []
+dangling = []
+
+[rustc-hash]
+enabled = ["std"]
+unused = [
+    "default",
+    "nightly",
+    "rand",
+]
+dangling = []
+
+[rustc-hex]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[rustc_version]
+enabled = []
+unused = []
+dangling = []
+
+["rustc_version@0.4.1"]
+enabled = []
+unused = []
+dangling = []
+
+[rustix]
+enabled = [
+    "alloc",
+    "default",
+    "fs",
+    "libc-extra-traits",
+    "std",
+    "use-libc-auxv",
+]
+unused = [
+    "all-apis",
+    "cc",
+    "event",
+    "io_uring",
+    "itoa",
+    "libc",
+    "libc_errno",
+    "linux_4_11",
+    "linux_latest",
+    "mm",
+    "mount",
+    "net",
+    "once_cell",
+    "param",
+    "pipe",
+    "process",
+    "procfs",
+    "pty",
+    "rand",
+    "runtime",
+    "rustc-dep-of-std",
+    "shm",
+    "stdio",
+    "system",
+    "termios",
+    "thread",
+    "time",
+    "use-explicitly-provided-auxv",
+    "use-libc",
+]
+dangling = []
+
+[rusty-fork]
+enabled = [
+    "timeout",
+    "wait-timeout",
+]
+unused = ["default"]
+dangling = []
+
+[ryu]
+enabled = []
+unused = [
+    "no-panic",
+    "small",
+]
+dangling = []
+
+[sec1]
+enabled = [
+    "alloc",
+    "default",
+    "der",
+    "point",
+    "std",
+    "subtle",
+    "zeroize",
+]
+unused = [
+    "pem",
+    "pkcs8",
+    "serde",
+]
+dangling = []
+
+[secp256k1]
+enabled = [
+    "alloc",
+    "global-context",
+    "rand",
+    "recovery",
+    "std",
+]
+unused = [
+    "default",
+    "global-context-less-secure",
+    "hashes",
+    "hashes-std",
+    "lowmemory",
+    "rand-std",
+    "serde",
+]
+dangling = []
+
+[secp256k1-sys]
+enabled = [
+    "alloc",
+    "recovery",
+    "std",
+]
+unused = [
+    "default",
+    "lowmemory",
+]
+dangling = []
+
+[semver]
+enabled = ["default"]
+unused = [
+    "ci",
+    "diesel",
+    "serde",
+]
+dangling = []
+
+[semver-parser]
+enabled = []
+unused = []
+dangling = []
+
+["semver@1.0.24"]
+enabled = [
+    "default",
+    "std",
+]
+unused = ["serde"]
+dangling = []
+
+[serde]
+enabled = [
+    "alloc",
+    "default",
+    "derive",
+    "rc",
+    "serde_derive",
+    "std",
+]
+unused = ["unstable"]
+dangling = []
+
+[serde-generate]
+enabled = [
+    "cpp",
+    "csharp",
+    "dart",
+    "default",
+    "golang",
+    "include_dir",
+    "java",
+    "ocaml",
+    "phf",
+    "python3",
+    "rust",
+    "solidity",
+    "swift",
+    "typescript",
+]
+unused = ["dangling"]
+dangling = ["dangling"]
+
+[serde-generate-bin]
+enabled = []
+unused = []
+dangling = []
+
+[serde-name]
+enabled = []
+unused = []
+dangling = []
+
+[serde-reflection]
+enabled = []
+unused = []
+dangling = []
+
+[serde_bytes]
+enabled = [
+    "default",
+    "std",
+]
+unused = ["alloc"]
+dangling = []
+
+[serde_derive]
+enabled = ["default"]
+unused = ["deserialize_in_place"]
+dangling = []
+
+[serde_json]
+enabled = [
+    "alloc",
+    "default",
+    "indexmap",
+    "preserve_order",
+    "std",
+]
+unused = [
+    "arbitrary_precision",
+    "float_roundtrip",
+    "raw_value",
+    "unbounded_depth",
+]
+dangling = []
+
+[serde_yaml]
+enabled = []
+unused = []
+dangling = []
+
+[sha2]
+enabled = ["std"]
+unused = [
+    "asm",
+    "asm-aarch64",
+    "compress",
+    "default",
+    "force-soft",
+    "loongarch64_asm",
+    "oid",
+    "sha2-asm",
+]
+dangling = []
+
+[sha3]
+enabled = ["std"]
+unused = [
+    "asm",
+    "default",
+    "oid",
+    "reset",
+]
+dangling = []
+
+[sha3-asm]
+enabled = []
+unused = []
+dangling = []
+
+[shlex]
+enabled = [
+    "default",
+    "std",
+]
+unused = []
+dangling = []
+
+[signature]
+enabled = [
+    "alloc",
+    "digest",
+    "rand_core",
+    "std",
+]
+unused = ["derive"]
+dangling = []
+
+[siphasher]
+enabled = [
+    "default",
+    "std",
+]
+unused = [
+    "serde",
+    "serde_json",
+    "serde_no_std",
+    "serde_std",
+]
+dangling = []
+
+[smawk]
+enabled = []
+unused = ["ndarray"]
+dangling = []
+
+[spin]
+enabled = []
+unused = []
+dangling = []
+
+[spki]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "arbitrary",
+    "base64",
+    "fingerprint",
+    "pem",
+    "sha2",
+]
+dangling = []
+
+[static_assertions]
+enabled = []
+unused = ["nightly"]
+dangling = []
+
+[strsim]
+enabled = []
+unused = []
+dangling = []
+
+[structopt]
+enabled = ["default"]
+unused = [
+    "color",
+    "debug",
+    "doc",
+    "lints",
+    "no_cargo",
+    "paw",
+    "paw_dep",
+    "suggestions",
+    "wrap_help",
+    "yaml",
+]
+dangling = []
+
+[structopt-derive]
+enabled = []
+unused = ["paw"]
+dangling = []
+
+[substrate-bn]
+enabled = []
+unused = ["default"]
+dangling = []
+
+[subtle]
+enabled = ["i128"]
+unused = [
+    "const-generics",
+    "core_hint_black_box",
+    "default",
+    "nightly",
+    "std",
+]
+dangling = []
+
+[syn]
+enabled = [
+    "clone-impls",
+    "default",
+    "derive",
+    "extra-traits",
+    "fold",
+    "full",
+    "parsing",
+    "printing",
+    "proc-macro",
+    "quote",
+    "visit",
+]
+unused = [
+    "test",
+    "visit-mut",
+]
+dangling = []
+
+[syn-solidity]
+enabled = [
+    "visit",
+    "visit-mut",
+]
+unused = []
+dangling = []
+
+["syn@2.0.85"]
+enabled = [
+    "clone-impls",
+    "default",
+    "derive",
+    "extra-traits",
+    "full",
+    "parsing",
+    "printing",
+    "proc-macro",
+    "visit",
+    "visit-mut",
+]
+unused = [
+    "fold",
+    "test",
+]
+dangling = []
+
+[tap]
+enabled = []
+unused = []
+dangling = []
+
+[tempfile]
+enabled = []
+unused = ["nightly"]
+dangling = []
+
+[textwrap]
+enabled = []
+unused = [
+    "hyphenation",
+    "term_size",
+]
+dangling = []
+
+["textwrap@0.13.4"]
+enabled = [
+    "default",
+    "smawk",
+    "unicode-width",
+]
+unused = [
+    "hyphenation",
+    "terminal_size",
+]
+dangling = []
+
+[thiserror]
+enabled = []
+unused = []
+dangling = []
+
+[thiserror-impl]
+enabled = []
+unused = []
+dangling = []
+
+[threadpool]
+enabled = []
+unused = []
+dangling = []
+
+[tiny-keccak]
+enabled = ["keccak"]
+unused = [
+    "cshake",
+    "default",
+    "fips202",
+    "k12",
+    "kmac",
+    "parallel_hash",
+    "sha3",
+    "shake",
+    "sp800",
+    "tuple_hash",
+]
+dangling = []
+
+[toml_datetime]
+enabled = []
+unused = ["serde"]
+dangling = []
+
+[toml_edit]
+enabled = [
+    "default",
+    "display",
+    "parse",
+]
+unused = [
+    "perf",
+    "serde",
+    "unbounded",
+]
+dangling = []
+
+[typeid]
+enabled = []
+unused = []
+dangling = []
+
+[typenum]
+enabled = []
+unused = [
+    "const-generics",
+    "force_unix_path_separator",
+    "i128",
+    "no_std",
+    "scale-info",
+    "scale_info",
+    "strict",
+]
+dangling = []
+
+[ucd-trie]
+enabled = ["std"]
+unused = ["default"]
+dangling = []
+
+[uint]
+enabled = ["std"]
+unused = [
+    "arbitrary",
+    "default",
+    "quickcheck",
+]
+dangling = []
+
+[unarray]
+enabled = []
+unused = []
+dangling = []
+
+[unicode-ident]
+enabled = []
+unused = []
+dangling = []
+
+[unicode-segmentation]
+enabled = []
+unused = ["no_std"]
+dangling = []
+
+[unicode-width]
+enabled = ["default"]
+unused = [
+    "compiler_builtins",
+    "core",
+    "no_std",
+    "rustc-dep-of-std",
+    "std",
+]
+dangling = []
+
+[unicode-xid]
+enabled = ["default"]
+unused = [
+    "bench",
+    "no_std",
+]
+dangling = []
+
+[valuable]
+enabled = [
+    "alloc",
+    "std",
+]
+unused = [
+    "default",
+    "derive",
+    "valuable-derive",
+]
+dangling = []
+
+[vec_map]
+enabled = []
+unused = [
+    "eders",
+    "serde",
+]
+dangling = []
+
+[version_check]
+enabled = []
+unused = []
+dangling = []
+
+[wait-timeout]
+enabled = []
+unused = []
+dangling = []
+
+[wasi]
+enabled = []
+unused = [
+    "compiler_builtins",
+    "core",
+    "default",
+    "rustc-dep-of-std",
+    "rustc-std-workspace-alloc",
+    "std",
+]
+dangling = []
+
+[which]
+enabled = []
+unused = ["regex"]
+dangling = []
+
+[winapi]
+enabled = [
+    "consoleapi",
+    "errhandlingapi",
+    "fileapi",
+    "handleapi",
+    "minwinbase",
+    "minwindef",
+    "processenv",
+    "winbase",
+]
+unused = [
+    "accctrl",
+    "aclapi",
+    "activation",
+    "adhoc",
+    "appmgmt",
+    "audioclient",
+    "audiosessiontypes",
+    "avrt",
+    "basetsd",
+    "bcrypt",
+    "bits",
+    "bits10_1",
+    "bits1_5",
+    "bits2_0",
+    "bits2_5",
+    "bits3_0",
+    "bits4_0",
+    "bits5_0",
+    "bitscfg",
+    "bitsmsg",
+    "bluetoothapis",
+    "bluetoothleapis",
+    "bthdef",
+    "bthioctl",
+    "bthledef",
+    "bthsdpdef",
+    "bugcodes",
+    "cderr",
+    "cfg",
+    "cfgmgr32",
+    "cguid",
+    "combaseapi",
+    "coml2api",
+    "commapi",
+    "commctrl",
+    "commdlg",
+    "commoncontrols",
+    "corecrt",
+    "corsym",
+    "d2d1",
+    "d2d1_1",
+    "d2d1_2",
+    "d2d1_3",
+    "d2d1effectauthor",
+    "d2d1effects",
+    "d2d1effects_1",
+    "d2d1effects_2",
+    "d2d1svg",
+    "d2dbasetypes",
+    "d3d",
+    "d3d10",
+    "d3d10_1",
+    "d3d10_1shader",
+    "d3d10effect",
+    "d3d10misc",
+    "d3d10sdklayers",
+    "d3d10shader",
+    "d3d11",
+    "d3d11_1",
+    "d3d11_2",
+    "d3d11_3",
+    "d3d11_4",
+    "d3d11on12",
+    "d3d11sdklayers",
+    "d3d11shader",
+    "d3d11tokenizedprogramformat",
+    "d3d12",
+    "d3d12sdklayers",
+    "d3d12shader",
+    "d3d9",
+    "d3d9caps",
+    "d3d9types",
+    "d3dcommon",
+    "d3dcompiler",
+    "d3dcsx",
+    "d3dkmdt",
+    "d3dkmthk",
+    "d3dukmdt",
+    "d3dx10core",
+    "d3dx10math",
+    "d3dx10mesh",
+    "datetimeapi",
+    "davclnt",
+    "dbghelp",
+    "dbt",
+    "dcommon",
+    "dcomp",
+    "dcompanimation",
+    "dcomptypes",
+    "dde",
+    "ddraw",
+    "ddrawi",
+    "ddrawint",
+    "debug",
+    "debugapi",
+    "devguid",
+    "devicetopology",
+    "devpkey",
+    "devpropdef",
+    "dinput",
+    "dinputd",
+    "dispex",
+    "dmksctl",
+    "dmusicc",
+    "docobj",
+    "documenttarget",
+    "dot1x",
+    "dpa_dsa",
+    "dpapi",
+    "dsgetdc",
+    "dsound",
+    "dsrole",
+    "dvp",
+    "dwmapi",
+    "dwrite",
+    "dwrite_1",
+    "dwrite_2",
+    "dwrite_3",
+    "dxdiag",
+    "dxfile",
+    "dxgi",
+    "dxgi1_2",
+    "dxgi1_3",
+    "dxgi1_4",
+    "dxgi1_5",
+    "dxgi1_6",
+    "dxgidebug",
+    "dxgiformat",
+    "dxgitype",
+    "dxva2api",
+    "dxvahd",
+    "eaptypes",
+    "enclaveapi",
+    "endpointvolume",
+    "everything",
+    "evntcons",
+    "evntprov",
+    "evntrace",
+    "excpt",
+    "exdisp",
+    "fibersapi",
+    "functiondiscoverykeys_devpkey",
+    "gl-gl",
+    "guiddef",
+    "heapapi",
+    "hidclass",
+    "hidpi",
+    "hidsdi",
+    "hidusage",
+    "highlevelmonitorconfigurationapi",
+    "hstring",
+    "http",
+    "ifdef",
+    "ifmib",
+    "imm",
+    "impl-debug",
+    "impl-default",
+    "in6addr",
+    "inaddr",
+    "inspectable",
+    "interlockedapi",
+    "intsafe",
+    "ioapiset",
+    "ipexport",
+    "iphlpapi",
+    "ipifcons",
+    "ipmib",
+    "iprtrmib",
+    "iptypes",
+    "jobapi",
+    "jobapi2",
+    "knownfolders",
+    "ks",
+    "ksmedia",
+    "ktmtypes",
+    "ktmw32",
+    "l2cmn",
+    "libloaderapi",
+    "limits",
+    "lmaccess",
+    "lmalert",
+    "lmapibuf",
+    "lmat",
+    "lmcons",
+    "lmdfs",
+    "lmerrlog",
+    "lmjoin",
+    "lmmsg",
+    "lmremutl",
+    "lmrepl",
+    "lmserver",
+    "lmshare",
+    "lmstats",
+    "lmsvc",
+    "lmuse",
+    "lmwksta",
+    "lowlevelmonitorconfigurationapi",
+    "lsalookup",
+    "memoryapi",
+    "minschannel",
+    "mmdeviceapi",
+    "mmeapi",
+    "mmreg",
+    "mmsystem",
+    "mprapidef",
+    "msaatext",
+    "mscat",
+    "mschapp",
+    "mssip",
+    "mstcpip",
+    "mswsock",
+    "mswsockdef",
+    "namedpipeapi",
+    "namespaceapi",
+    "nb30",
+    "ncrypt",
+    "netioapi",
+    "nldef",
+    "ntddndis",
+    "ntddscsi",
+    "ntddser",
+    "ntdef",
+    "ntlsa",
+    "ntsecapi",
+    "ntstatus",
+    "oaidl",
+    "objbase",
+    "objidl",
+    "objidlbase",
+    "ocidl",
+    "ole2",
+    "oleauto",
+    "olectl",
+    "oleidl",
+    "opmapi",
+    "pdh",
+    "perflib",
+    "physicalmonitorenumerationapi",
+    "playsoundapi",
+    "portabledevice",
+    "portabledeviceapi",
+    "portabledevicetypes",
+    "powerbase",
+    "powersetting",
+    "powrprof",
+    "processsnapshot",
+    "processthreadsapi",
+    "processtopologyapi",
+    "profileapi",
+    "propidl",
+    "propkey",
+    "propkeydef",
+    "propsys",
+    "prsht",
+    "psapi",
+    "qos",
+    "realtimeapiset",
+    "reason",
+    "restartmanager",
+    "restrictederrorinfo",
+    "rmxfguid",
+    "roapi",
+    "robuffer",
+    "roerrorapi",
+    "rpc",
+    "rpcdce",
+    "rpcndr",
+    "rtinfo",
+    "sapi",
+    "sapi51",
+    "sapi53",
+    "sapiddk",
+    "sapiddk51",
+    "schannel",
+    "sddl",
+    "securityappcontainer",
+    "securitybaseapi",
+    "servprov",
+    "setupapi",
+    "shellapi",
+    "shellscalingapi",
+    "shlobj",
+    "shobjidl",
+    "shobjidl_core",
+    "shtypes",
+    "softpub",
+    "spapidef",
+    "spellcheck",
+    "sporder",
+    "sql",
+    "sqlext",
+    "sqltypes",
+    "sqlucode",
+    "sspi",
+    "std",
+    "stralign",
+    "stringapiset",
+    "strmif",
+    "subauth",
+    "synchapi",
+    "sysinfoapi",
+    "systemtopologyapi",
+    "taskschd",
+    "tcpestats",
+    "tcpmib",
+    "textstor",
+    "threadpoolapiset",
+    "threadpoollegacyapiset",
+    "timeapi",
+    "timezoneapi",
+    "tlhelp32",
+    "transportsettingcommon",
+    "tvout",
+    "udpmib",
+    "unknwnbase",
+    "urlhist",
+    "urlmon",
+    "usb",
+    "usbioctl",
+    "usbiodef",
+    "usbscan",
+    "usbspec",
+    "userenv",
+    "usp10",
+    "utilapiset",
+    "uxtheme",
+    "vadefs",
+    "vcruntime",
+    "vsbackup",
+    "vss",
+    "vsserror",
+    "vswriter",
+    "wbemads",
+    "wbemcli",
+    "wbemdisp",
+    "wbemprov",
+    "wbemtran",
+    "wct",
+    "werapi",
+    "wincodec",
+    "wincodecsdk",
+    "wincon",
+    "wincontypes",
+    "wincred",
+    "wincrypt",
+    "windef",
+    "windot11",
+    "windowsceip",
+    "windowsx",
+    "winefs",
+    "winerror",
+    "winevt",
+    "wingdi",
+    "winhttp",
+    "wininet",
+    "winineti",
+    "winioctl",
+    "winnetwk",
+    "winnls",
+    "winnt",
+    "winreg",
+    "winsafer",
+    "winscard",
+    "winsmcrd",
+    "winsock2",
+    "winspool",
+    "winstring",
+    "winsvc",
+    "wintrust",
+    "winusb",
+    "winusbio",
+    "winuser",
+    "winver",
+    "wlanapi",
+    "wlanihv",
+    "wlanihvtypes",
+    "wlantypes",
+    "wlclient",
+    "wmistr",
+    "wnnc",
+    "wow64apiset",
+    "wpdmtpextensions",
+    "ws2bth",
+    "ws2def",
+    "ws2ipdef",
+    "ws2spi",
+    "ws2tcpip",
+    "wtsapi32",
+    "wtypes",
+    "wtypesbase",
+    "xinput",
+]
+dangling = []
+
+[winapi-i686-pc-windows-gnu]
+enabled = []
+unused = []
+dangling = []
+
+[winapi-x86_64-pc-windows-gnu]
+enabled = []
+unused = []
+dangling = []
+
+[windows-sys]
+enabled = [
+    "Win32",
+    "Win32_Foundation",
+    "Win32_NetworkManagement",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_Networking",
+    "Win32_Networking_WinSock",
+    "Win32_Storage",
+    "Win32_Storage_FileSystem",
+    "Win32_System",
+    "Win32_System_Com",
+    "Win32_System_Diagnostics",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Threading",
+    "Win32_UI",
+    "Win32_UI_Shell",
+    "default",
+]
+unused = [
+    "Wdk",
+    "Wdk_Foundation",
+    "Wdk_Graphics",
+    "Wdk_Graphics_Direct3D",
+    "Wdk_Storage",
+    "Wdk_Storage_FileSystem",
+    "Wdk_Storage_FileSystem_Minifilters",
+    "Wdk_System",
+    "Wdk_System_IO",
+    "Wdk_System_OfflineRegistry",
+    "Wdk_System_Registry",
+    "Wdk_System_SystemInformation",
+    "Wdk_System_SystemServices",
+    "Wdk_System_Threading",
+    "Win32_Data",
+    "Win32_Data_HtmlHelp",
+    "Win32_Data_RightsManagement",
+    "Win32_Devices",
+    "Win32_Devices_AllJoyn",
+    "Win32_Devices_BiometricFramework",
+    "Win32_Devices_Bluetooth",
+    "Win32_Devices_Communication",
+    "Win32_Devices_DeviceAndDriverInstallation",
+    "Win32_Devices_DeviceQuery",
+    "Win32_Devices_Display",
+    "Win32_Devices_Enumeration",
+    "Win32_Devices_Enumeration_Pnp",
+    "Win32_Devices_Fax",
+    "Win32_Devices_HumanInterfaceDevice",
+    "Win32_Devices_PortableDevices",
+    "Win32_Devices_Properties",
+    "Win32_Devices_Pwm",
+    "Win32_Devices_Sensors",
+    "Win32_Devices_SerialCommunication",
+    "Win32_Devices_Tapi",
+    "Win32_Devices_Usb",
+    "Win32_Devices_WebServicesOnDevices",
+    "Win32_Gaming",
+    "Win32_Globalization",
+    "Win32_Graphics",
+    "Win32_Graphics_Dwm",
+    "Win32_Graphics_Gdi",
+    "Win32_Graphics_GdiPlus",
+    "Win32_Graphics_Hlsl",
+    "Win32_Graphics_OpenGL",
+    "Win32_Graphics_Printing",
+    "Win32_Graphics_Printing_PrintTicket",
+    "Win32_Management",
+    "Win32_Management_MobileDeviceManagementRegistration",
+    "Win32_Media",
+    "Win32_Media_Audio",
+    "Win32_Media_DxMediaObjects",
+    "Win32_Media_KernelStreaming",
+    "Win32_Media_Multimedia",
+    "Win32_Media_Streaming",
+    "Win32_Media_WindowsMediaFormat",
+    "Win32_NetworkManagement_Dhcp",
+    "Win32_NetworkManagement_Dns",
+    "Win32_NetworkManagement_InternetConnectionWizard",
+    "Win32_NetworkManagement_Multicast",
+    "Win32_NetworkManagement_Ndis",
+    "Win32_NetworkManagement_NetBios",
+    "Win32_NetworkManagement_NetManagement",
+    "Win32_NetworkManagement_NetShell",
+    "Win32_NetworkManagement_NetworkDiagnosticsFramework",
+    "Win32_NetworkManagement_P2P",
+    "Win32_NetworkManagement_QoS",
+    "Win32_NetworkManagement_Rras",
+    "Win32_NetworkManagement_Snmp",
+    "Win32_NetworkManagement_WNet",
+    "Win32_NetworkManagement_WebDav",
+    "Win32_NetworkManagement_WiFi",
+    "Win32_NetworkManagement_WindowsConnectionManager",
+    "Win32_NetworkManagement_WindowsFilteringPlatform",
+    "Win32_NetworkManagement_WindowsFirewall",
+    "Win32_NetworkManagement_WindowsNetworkVirtualization",
+    "Win32_Networking_ActiveDirectory",
+    "Win32_Networking_Clustering",
+    "Win32_Networking_HttpServer",
+    "Win32_Networking_Ldap",
+    "Win32_Networking_WebSocket",
+    "Win32_Networking_WinHttp",
+    "Win32_Networking_WinInet",
+    "Win32_Networking_WindowsWebServices",
+    "Win32_Security",
+    "Win32_Security_AppLocker",
+    "Win32_Security_Authentication",
+    "Win32_Security_Authentication_Identity",
+    "Win32_Security_Authorization",
+    "Win32_Security_Credentials",
+    "Win32_Security_Cryptography",
+    "Win32_Security_Cryptography_Catalog",
+    "Win32_Security_Cryptography_Certificates",
+    "Win32_Security_Cryptography_Sip",
+    "Win32_Security_Cryptography_UI",
+    "Win32_Security_DiagnosticDataQuery",
+    "Win32_Security_DirectoryServices",
+    "Win32_Security_EnterpriseData",
+    "Win32_Security_ExtensibleAuthenticationProtocol",
+    "Win32_Security_Isolation",
+    "Win32_Security_LicenseProtection",
+    "Win32_Security_NetworkAccessProtection",
+    "Win32_Security_WinTrust",
+    "Win32_Security_WinWlx",
+    "Win32_Storage_Cabinets",
+    "Win32_Storage_CloudFilters",
+    "Win32_Storage_Compression",
+    "Win32_Storage_DistributedFileSystem",
+    "Win32_Storage_FileHistory",
+    "Win32_Storage_Imapi",
+    "Win32_Storage_IndexServer",
+    "Win32_Storage_InstallableFileSystems",
+    "Win32_Storage_IscsiDisc",
+    "Win32_Storage_Jet",
+    "Win32_Storage_Nvme",
+    "Win32_Storage_OfflineFiles",
+    "Win32_Storage_OperationRecorder",
+    "Win32_Storage_Packaging",
+    "Win32_Storage_Packaging_Appx",
+    "Win32_Storage_ProjectedFileSystem",
+    "Win32_Storage_StructuredStorage",
+    "Win32_Storage_Vhd",
+    "Win32_Storage_Xps",
+    "Win32_System_AddressBook",
+    "Win32_System_Antimalware",
+    "Win32_System_ApplicationInstallationAndServicing",
+    "Win32_System_ApplicationVerifier",
+    "Win32_System_ClrHosting",
+    "Win32_System_Com_Marshal",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Com_Urlmon",
+    "Win32_System_ComponentServices",
+    "Win32_System_Console",
+    "Win32_System_CorrelationVector",
+    "Win32_System_DataExchange",
+    "Win32_System_DeploymentServices",
+    "Win32_System_DeveloperLicensing",
+    "Win32_System_Diagnostics_Ceip",
+    "Win32_System_Diagnostics_Debug_Extensions",
+    "Win32_System_Diagnostics_Etw",
+    "Win32_System_Diagnostics_ProcessSnapshotting",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_DistributedTransactionCoordinator",
+    "Win32_System_Environment",
+    "Win32_System_ErrorReporting",
+    "Win32_System_EventCollector",
+    "Win32_System_EventLog",
+    "Win32_System_EventNotificationService",
+    "Win32_System_GroupPolicy",
+    "Win32_System_HostCompute",
+    "Win32_System_HostComputeNetwork",
+    "Win32_System_HostComputeSystem",
+    "Win32_System_Hypervisor",
+    "Win32_System_IO",
+    "Win32_System_Iis",
+    "Win32_System_Ioctl",
+    "Win32_System_JobObjects",
+    "Win32_System_Js",
+    "Win32_System_Kernel",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Mailslots",
+    "Win32_System_Mapi",
+    "Win32_System_Memory",
+    "Win32_System_Memory_NonVolatile",
+    "Win32_System_MessageQueuing",
+    "Win32_System_MixedReality",
+    "Win32_System_Ole",
+    "Win32_System_PasswordManagement",
+    "Win32_System_Performance",
+    "Win32_System_Performance_HardwareCounterProfiling",
+    "Win32_System_Pipes",
+    "Win32_System_Power",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Recovery",
+    "Win32_System_Registry",
+    "Win32_System_RemoteDesktop",
+    "Win32_System_RemoteManagement",
+    "Win32_System_RestartManager",
+    "Win32_System_Restore",
+    "Win32_System_Rpc",
+    "Win32_System_Search",
+    "Win32_System_Search_Common",
+    "Win32_System_SecurityCenter",
+    "Win32_System_Services",
+    "Win32_System_SetupAndMigration",
+    "Win32_System_Shutdown",
+    "Win32_System_StationsAndDesktops",
+    "Win32_System_SubsystemForLinux",
+    "Win32_System_SystemInformation",
+    "Win32_System_SystemServices",
+    "Win32_System_Time",
+    "Win32_System_TpmBaseServices",
+    "Win32_System_UserAccessLogging",
+    "Win32_System_Variant",
+    "Win32_System_VirtualDosMachines",
+    "Win32_System_WindowsProgramming",
+    "Win32_System_Wmi",
+    "Win32_UI_Accessibility",
+    "Win32_UI_ColorSystem",
+    "Win32_UI_Controls",
+    "Win32_UI_Controls_Dialogs",
+    "Win32_UI_HiDpi",
+    "Win32_UI_Input",
+    "Win32_UI_Input_Ime",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Input_Pointer",
+    "Win32_UI_Input_Touch",
+    "Win32_UI_Input_XboxController",
+    "Win32_UI_InteractionContext",
+    "Win32_UI_Magnification",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_TabletPC",
+    "Win32_UI_TextServices",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Web",
+    "Win32_Web_InternetExplorer",
+    "docs",
+]
+dangling = []
+
+[windows-targets]
+enabled = []
+unused = []
+dangling = []
+
+[windows_aarch64_gnullvm]
+enabled = []
+unused = []
+dangling = []
+
+[windows_aarch64_msvc]
+enabled = []
+unused = []
+dangling = []
+
+[windows_i686_gnu]
+enabled = []
+unused = []
+dangling = []
+
+[windows_i686_gnullvm]
+enabled = []
+unused = []
+dangling = []
+
+[windows_i686_msvc]
+enabled = []
+unused = []
+dangling = []
+
+[windows_x86_64_gnu]
+enabled = []
+unused = []
+dangling = []
+
+[windows_x86_64_gnullvm]
+enabled = []
+unused = []
+dangling = []
+
+[windows_x86_64_msvc]
+enabled = []
+unused = []
+dangling = []
+
+[winnow]
+enabled = [
+    "alloc",
+    "default",
+    "std",
+]
+unused = [
+    "debug",
+    "simd",
+    "unstable-doc",
+    "unstable-recover",
+]
+dangling = []
+
+[wyz]
+enabled = []
+unused = [
+    "alloc",
+    "default",
+    "garbage",
+    "once_cell",
+    "std",
+    "typemap",
+]
+dangling = []
+
+[yaml-rust]
+enabled = []
+unused = []
+dangling = []
+
+[zeroize]
+enabled = [
+    "alloc",
+    "default",
+    "std",
+    "zeroize_derive",
+]
+unused = [
+    "aarch64",
+    "derive",
+    "serde",
+    "simd",
+]
+dangling = []
+
+[zeroize_derive]
+enabled = []
+unused = []
+dangling = []
