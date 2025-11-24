@@ -110,7 +110,7 @@ fn scan_feature_usages(root: &Path) -> Result<HashSet<String>> {
         .into_iter()
         .filter_map(|e| e.ok())
         .filter(|e| {
-            e.path().extension().map_or(false, |ext| ext == "rs")
+            e.path().extension().is_some_and(|ext| ext == "rs")
                 && !e.path().components().any(|c| c.as_os_str() == "target")
         })
     {
