@@ -16,3 +16,7 @@ toml = "0.8"
 anyhow = "1.0"
 walkdir = "2"
 regex = "1"
+
+[dev-dependencies]
+insta = { version = "1.41", features = ["json"] }
+tempfile = "3.8"
