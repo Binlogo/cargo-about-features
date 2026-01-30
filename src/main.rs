@@ -14,6 +14,10 @@ struct Args {
     #[arg(long)]
     manifest_path: Option<PathBuf>,
 
+    /// Target triple (e.g., x86_64-unknown-linux-gnu, wasm32-unknown-unknown)
+    #[arg(short, long)]
+    target: Option<String>,
+
     /// Output file path
     #[arg(short, long, default_value = "Cargo.features")]
     output: PathBuf,
@@ -23,7 +27,7 @@ fn main() -> Result<()> {
     let CargoCli::AboutFeatures(args) = CargoCli::parse();
 
     // Analyze features
-    let features_map = analyze_features(args.manifest_path)?;
+    let features_map = analyze_features(args.manifest_path, args.target.as_deref())?;
 
     // Generate TOML output with comments
     let output_content = generate_toml_output(&features_map)?;

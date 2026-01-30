@@ -1,4 +1,5 @@
 use anyhow::Result;
+use cargo_metadata::MetadataCommand;
 use regex::Regex;
 use std::collections::{BTreeMap, HashSet};
 use std::path::{Path, PathBuf};
@@ -13,10 +14,13 @@ pub struct FeatureSet {
 }
 
 /// Analyze dependency feature usage for a project
-pub fn analyze_features(manifest_path: Option<PathBuf>) -> Result<BTreeMap<String, FeatureSet>> {
-    let mut cmd = cargo_metadata::MetadataCommand::new();
+pub fn analyze_features(manifest_path: Option<PathBuf>, target: Option<&str>) -> Result<BTreeMap<String, FeatureSet>> {
+    let mut cmd = MetadataCommand::new();
     if let Some(path) = manifest_path {
         cmd.manifest_path(path);
+    }
+    if let Some(target) = target {
+        cmd.other_options(vec!["--filter-platform".to_string(), target.to_string()]);
     }
 
     let metadata = cmd.exec()?;

@@ -29,7 +29,7 @@ toml = "0.8"
     fs::write(src_dir.join("lib.rs"), "// test")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Use insta for snapshot testing
@@ -103,7 +103,7 @@ toml = { version = "0.8", features = ["parse"] }
     fs::write(crate_b_src.join("lib.rs"), "// crate-b")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(workspace_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(workspace_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Use insta for snapshot testing
@@ -143,7 +143,7 @@ regex-automata = "0.3"
     fs::write(src_dir.join("lib.rs"), "// test")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Verify output contains version information
