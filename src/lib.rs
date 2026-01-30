@@ -1,4 +1,5 @@
 use anyhow::Result;
+use cargo_metadata::MetadataCommand;
 use regex::Regex;
 use std::collections::{BTreeMap, HashSet};
 use std::path::{Path, PathBuf};
@@ -13,10 +14,16 @@ pub struct FeatureSet {
 }
 
 /// Analyze dependency feature usage for a project
-pub fn analyze_features(manifest_path: Option<PathBuf>) -> Result<BTreeMap<String, FeatureSet>> {
-    let mut cmd = cargo_metadata::MetadataCommand::new();
+pub fn analyze_features(
+    manifest_path: Option<PathBuf>,
+    target: Option<&str>,
+) -> Result<BTreeMap<String, FeatureSet>> {
+    let mut cmd = MetadataCommand::new();
     if let Some(path) = manifest_path {
         cmd.manifest_path(path);
+    }
+    if let Some(target) = target {
+        cmd.other_options(vec!["--filter-platform".to_string(), target.to_string()]);
     }
 
     let metadata = cmd.exec()?;
@@ -269,5 +276,56 @@ mod tests {
         assert!(serialized.contains("\"debug\""));
         // Should not contain dangling field when None
         assert!(!serialized.contains("dangling"));
+    }
+
+    #[test]
+    fn test_analyze_features_with_target() {
+        // This test verifies that the function accepts a target parameter
+        // We test with the project's own Cargo.toml
+        let manifest_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("Cargo.toml");
+
+        // Test with None target (default behavior)
+        let result_none = analyze_features(Some(manifest_path.clone()), None);
+        assert!(result_none.is_ok(), "Should work with None target");
+
+        let features_none = result_none.unwrap();
+        assert!(!features_none.is_empty(), "Should have some features");
+
+        // Test with a specific target
+        // This verifies the API accepts the parameter and cargo handles it
+        #[cfg(target_os = "macos")]
+        let target = "aarch64-apple-darwin";
+
+        #[cfg(target_os = "linux")]
+        let target = "x86_64-unknown-linux-gnu";
+
+        #[cfg(target_os = "windows")]
+        let target = "x86_64-pc-windows-msvc";
+
+        #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
+        let target = "wasm32-unknown-unknown";
+
+        let result_with_target = analyze_features(Some(manifest_path), Some(target));
+
+        // The result should be Ok
+        // Note: It may have different features due to target-specific filtering
+        assert!(
+            result_with_target.is_ok(),
+            "Should accept valid target triple: {}",
+            target
+        );
+    }
+
+    #[test]
+    fn test_analyze_features_signature() {
+        // Verify the function signature matches expected API
+        fn _signature_check(
+            manifest_path: Option<PathBuf>,
+            target: Option<&str>,
+        ) -> Result<BTreeMap<String, FeatureSet>> {
+            analyze_features(manifest_path, target)
+        }
+        // This function exists only to verify the signature at compile time
+        let _ = _signature_check;
     }
 }

@@ -1,6 +1,7 @@
 use anyhow::Result;
 use cargo_about_features::{analyze_features, generate_toml_output};
 use std::fs;
+use std::path::PathBuf;
 use tempfile::TempDir;
 
 #[test]
@@ -29,7 +30,7 @@ toml = "0.8"
     fs::write(src_dir.join("lib.rs"), "// test")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Use insta for snapshot testing
@@ -103,7 +104,7 @@ toml = { version = "0.8", features = ["parse"] }
     fs::write(crate_b_src.join("lib.rs"), "// crate-b")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(workspace_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(workspace_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Use insta for snapshot testing
@@ -143,7 +144,7 @@ regex-automata = "0.3"
     fs::write(src_dir.join("lib.rs"), "// test")?;
 
     // Analyze features
-    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")))?;
+    let features_map = analyze_features(Some(project_dir.join("Cargo.toml")), None)?;
     let output = generate_toml_output(&features_map)?;
 
     // Verify output contains version information
@@ -159,6 +160,44 @@ regex-automata = "0.3"
     }, {
         insta::assert_snapshot!("feature_collision_handling", output);
     });
+
+    Ok(())
+}
+
+#[test]
+fn test_target_specific_analysis() -> Result<()> {
+    // Test target-specific analysis using the project's own manifest
+    let manifest_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("Cargo.toml");
+
+    // Analyze without target filter (default)
+    let features_default = analyze_features(Some(manifest_path.clone()), None)?;
+
+    // Get the current target triple for platform-specific analysis
+    #[cfg(target_os = "macos")]
+    let target_triple = "aarch64-apple-darwin";
+
+    #[cfg(target_os = "linux")]
+    let target_triple = "x86_64-unknown-linux-gnu";
+
+    #[cfg(target_os = "windows")]
+    let target_triple = "x86_64-pc-windows-msvc";
+
+    #[cfg(not(any(target_os = "macos", target_os = "linux", target_os = "windows")))]
+    let target_triple = "wasm32-unknown-unknown";
+
+    // Analyze with target filter
+    let features_target = analyze_features(Some(manifest_path), Some(target_triple))?;
+
+    // Both should return valid results
+    assert!(
+        !features_default.is_empty(),
+        "Default analysis should return results"
+    );
+    assert!(
+        !features_target.is_empty(),
+        "Target-specific analysis should return results for: {}",
+        target_triple
+    );
 
     Ok(())
 }
