@@ -14,7 +14,10 @@ pub struct FeatureSet {
 }
 
 /// Analyze dependency feature usage for a project
-pub fn analyze_features(manifest_path: Option<PathBuf>, target: Option<&str>) -> Result<BTreeMap<String, FeatureSet>> {
+pub fn analyze_features(
+    manifest_path: Option<PathBuf>,
+    target: Option<&str>,
+) -> Result<BTreeMap<String, FeatureSet>> {
     let mut cmd = MetadataCommand::new();
     if let Some(path) = manifest_path {
         cmd.manifest_path(path);
